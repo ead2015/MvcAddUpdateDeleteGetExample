@@ -1,0 +1,29 @@
+﻿@model MvcAddUpdateDeleteGetExample.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<fieldset>
+    <legend>Student</legend>
+
+    <div >
+        
+       Name:  @Model.Name
+    </div>
+    
+    <div >
+        RollNumber : @Model.RollNumber
+    </div>
+    
+
+    <div >
+        Semester : @Model.Semester
+    </div>
+   
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

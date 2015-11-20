@@ -1,0 +1,51 @@
+﻿@model MvcAddUpdateDeleteGetExample.Models.Student
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+   
+
+    <fieldset>
+        <legend>Student</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Name)
+           
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RollNumber)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.RollNumber)
+           
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Semester)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Semester)
+           
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+

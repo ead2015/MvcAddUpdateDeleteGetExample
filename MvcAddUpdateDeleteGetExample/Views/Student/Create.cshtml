@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+   
+
+    <fieldset>
+        <legend>Student</legend>
+
+        <div>
+            <label >Name</label>
+        </div>
+        <div>
+            <input  id="Name" name="Name" type="text" value="" />
+            
+        </div>
+
+        <div >
+            <label >RollNumber</label>
+        </div>
+        <div >
+            <input  id="RollNumber" name="RollNumber" type="text" value="" />
+            
+        </div>
+
+        <div >
+            <label >Semester</label>
+        </div>
+        <div>
+            <input id="Semester" name="Semester" type="text" value="" />
+           
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+
